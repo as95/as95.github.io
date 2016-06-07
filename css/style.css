@@ -37,7 +37,11 @@ body {
   padding: 0%;
   margin-bottom: 10%;
 }
-
+@media (max-device-width: 1280px) {
+  h1{
+   font-size: 30px !important;
+  }
+}
 #homePage h1 {
   color: #FFC34C;
   font-size: 450%;
