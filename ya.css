@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #0035AE;
 }
@@ -10,7 +11,7 @@ body {
 #navigation .navbar {
   border-style: none;
   border-radius: 0;
-  background-color: #0035AE !important;
+  background-color: #0035AE;
 }
 
 #navigation .navbar-brand {
@@ -34,11 +35,12 @@ body {
   font-family: 'Sorts Mill Goudy', serif;
   background-color: #0035AE;
   padding: 0%;
+  margin-bottom: 10%;
 }
 
 #homePage h1 {
   color: #FFC34C;
-  font-size: 500%;
+  font-size: 450%;
   font-weight: bold;
 }
 
@@ -73,7 +75,7 @@ body {
 
 #aboutPage h1 {
   color: white;
-  font-size: 500%;
+  font-size: 450%;
   font-weight: bold;
   line-height: 130%;
 }
@@ -125,7 +127,8 @@ body {
 }
 
 #divider {
-  margin-top: 15%;
+  margin-top: 8%;
+  margin-bottom: 8%;
   border: none;
   border-top: medium double #333;
   color: #6090FE;
@@ -189,8 +192,12 @@ body {
 }
 
 #portfolioPage .row {
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#portfolioPage #projects .col-sm-4 {
+  margin-top: 5%;
 }
 
 #portfolioPage #projects .col-sm-12 {
@@ -213,8 +220,131 @@ body {
   height: .5px;
 }
 
-#portfolioPage #projects p {
+#portfolioPage #projects h4 {
   color: #A7C1FC;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
+}
+
+#portfolioPage #projects p {
+  color: #FFC34C;
+  font-family: 'Sorts Mill Goudy', serif;
+  margin-top: 8%;
+  font-size: 120%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#portfolioPage button {
+  margin-top: 10%;
+  font-size: 120%;
+  font-family: 'Sorts Mill Goudy', serif;
+  background-color: #FFC34C;
+  color: #0035AE;
+  border-style: none;
+  padding: 4% 2% 2% 2%;
+}
+
+#portfolioPage .hiddenCol {
+  background-color: #0035AE !important;
+}
+
+/*------- Contact ------*/
+#contactPage {
+  padding: 0% 5% 3% 5%;
+  font-family: 'Sorts Mill Goudy', serif;
+  width: 90%;
+  margin-top: 5%;
+  animation-duration: 2s;
+}
+
+#contactPage h1 {
+  color: white;
+  font-size: 500%;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+#contactPage p {
+  font-size: 140%;
+  color: white;
+}
+
+#contactPage .container-fluid {
+  padding: 1% 0% 1% 0%;
+  margin: 0% 0% 2% 0%;
+}
+
+input[type=text] {
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 140%;
+  border-bottom: thin solid #FFC34C;
+  color: #FFC34C;
+  background-color: #0035AE;
+}
+
+#contactForm button {
+  background-color: #FFC34C;
+  border: none;
+  color: #0035AE;
+  padding: 1% 2%;
+  font-size: 140%;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  border: none;
+  font-size: 140%;
+  border-bottom: thin solid #FFC34C;
+  color: #FFC34C;
+  background-color: #0035AE;
+  height: 50px;
+}
+
+/*---- End Contact -----*/
+footer {
+  background-color: #00164A;
+  color: white;
+  font-family: 'Sorts Mill Goudy', serif;
+  letter-spacing: 1px;
+  padding: 4% 0%;
+  font-size: 180%;
+}
+
+footer a {
+  color: #FFC34C;
+  font-size: 100%;
+  padding: 2% .5%;
+}
+
+footer hr {
+  width: 50%;
 }
