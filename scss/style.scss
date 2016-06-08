@@ -1,12 +1,19 @@
-$primary-color: #0035AE; // base blue
-$primary-colorV1: #6090FE; // lighter blue
-$primary-colorV2: #A7C1FC; // lightest blue
-$primary-colorV3: #00164A; // dark blue
-$secondary-color: #FFC34C;
-body {
-  background-color: $primary-color;
-  
+@charset "UTF-8";
+
+@media (max-device-width: 1280px) {
+  h1{
+   font-size: 30px !important;
+  }
+  svg{
+    width: 30%;
+  }
 }
+
+
+body {
+  background-color: #0035AE;
+}
+
 
 #navigation {
   padding: 3% 3%;
@@ -16,12 +23,12 @@ body {
 #navigation .navbar {
   border-style: none;
   border-radius: 0;
-  background-color: $primary-color;
+  background-color: #0035AE;
 }
 
 #navigation .navbar-brand {
-  background-color: $secondary-color;
-  color: $primary-color;
+  background-color: #FFC34C;
+  color: #0035AE;
   font-weight: bold;
 }
 
@@ -38,13 +45,13 @@ body {
 #homePage .jumbotron {
   margin-top: 14%;
   font-family: 'Sorts Mill Goudy', serif;
-  background-color: $primary-color;
+  background-color: #0035AE;
   padding: 0%;
   margin-bottom: 10%;
 }
 
 #homePage h1 {
-  color: $secondary-color;
+  color: #FFC34C;
   font-size: 450%;
   font-weight: bold;
 }
@@ -56,7 +63,7 @@ body {
 #homePage a {
   width: 30px;
   margin-right: 1%;
-  color: $primary-colorV1;
+  color: #6090FE;
   font-size: 240%;
   margin-left: 1%;
 }
@@ -102,7 +109,7 @@ body {
 }
 
 #aboutPage p {
-  color: $primary-colorV1;
+  color: #6090FE;
   font-size: 150%;
   font-family: 'Crete Round', serif;
 }
@@ -132,13 +139,13 @@ body {
 }
 
 #divider {
-  margin-top: 8%; 
+  margin-top: 8%;
   margin-bottom: 8%;
   border: none;
   border-top: medium double #333;
-  color: $primary-colorV1;
+  color: #6090FE;
   text-align: center;
-  background-color: $primary-colorV1;
+  background-color: #6090FE;
   width: 35%;
   height: 2px;
   border-style: none;
@@ -152,11 +159,11 @@ body {
   top: -0.7em;
   font-size: 1.5em;
   padding: 0 0.25em;
-  background: $primary-color;
+  background: #0035AE;
 }
 
 #aboutPage h4 {
-  color: $primary-colorV2;
+  color: #A7C1FC;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   font-size: 130%;
@@ -170,7 +177,7 @@ body {
 }
 
 #aboutPage h6 {
-  color: $primary-colorV1;
+  color: #6090FE;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   font-size: 115%;
@@ -186,7 +193,7 @@ body {
   padding-bottom: 2%;
   border-top: solid;
   border-width: 2px;
-  border-color: $primary-colorV1;
+  border-color: #6090FE;
 }
 
 #portfolioPage h1 {
@@ -200,11 +207,13 @@ body {
   margin-top: 0%;
   margin-bottom: 0%;
 }
-#portfolioPage #projects .col-sm-4{
+
+#portfolioPage #projects .col-sm-4 {
   margin-top: 5%;
 }
+
 #portfolioPage #projects .col-sm-12 {
-  background-color: $primary-colorV3;
+  background-color: #00164A;
   padding: 15%;
 }
 
@@ -218,39 +227,41 @@ body {
   width: 30%;
   margin-left: 0;
   text-align: left;
-  border-color: $secondary-color;
-  background-color: $secondary-color;
+  border-color: #FFC34C;
+  background-color: #FFC34C;
   height: .5px;
 }
 
 #portfolioPage #projects h4 {
-  color: $primary-colorV2;
+  color: #A7C1FC;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
 }
 
-#portfolioPage #projects p{
-  color: $secondary-color;
+#portfolioPage #projects p {
+  color: #FFC34C;
   font-family: 'Sorts Mill Goudy', serif;
   margin-top: 8%;
   font-size: 120%;
   text-align: justify;
   text-justify: inter-word;
 }
-#portfolioPage button{
+
+#portfolioPage button {
   margin-top: 10%;
   font-size: 120%;
   font-family: 'Sorts Mill Goudy', serif;
-  background-color: $secondary-color;
-  color: $primary-color;
-  border-style:none;
-  padding:4% 2% 2% 2%;
-  
+  background-color: #FFC34C;
+  color: #0035AE;
+  border-style: none;
+  padding: 4% 13% 2% 13%;
+  font-weight:bold;
 }
 
-#portfolioPage .hiddenCol{
-  background-color: $primary-color !important;
+#portfolioPage .hiddenCol {
+  background-color: #0035AE !important;
 }
+
 /*------- Contact ------*/
 #contactPage {
   padding: 0% 5% 3% 5%;
@@ -261,7 +272,7 @@ body {
 }
 
 #contactPage h1 {
-  color:white;
+  color: white;
   font-size: 500%;
   font-weight: bold;
   line-height: 130%;
@@ -269,7 +280,7 @@ body {
 
 #contactPage p {
   font-size: 140%;
-  color:white;
+  color: white;
 }
 
 #contactPage .container-fluid {
@@ -277,23 +288,24 @@ body {
   margin: 0% 0% 2% 0%;
 }
 
-input[type=text]{
+input[type=text] {
   width: 100%;
-  display:block;
+  display: block;
   border: none;
   font-size: 140%;
-  border-bottom: thin solid $secondary-color;
-  color: $secondary-color;
-  background-color: $primary-color;
+  border-bottom: thin solid #FFC34C;
+  color: #FFC34C;
+  background-color: #0035AE;
 }
 
-#contactForm button{
-  background-color: $secondary-color; 
+#contactForm button {
+  background-color: #FFC34C;
   border: none;
-  color: $primary-color;
+  color: #0035AE;
   padding: 1% 2%;
   font-size: 140%;
 }
+
 button span {
   cursor: pointer;
   display: inline-block;
@@ -319,34 +331,34 @@ button:hover span:after {
   right: 0;
 }
 
-
-textarea{
+textarea {
   width: 100%;
-  display:block;
+  display: block;
   border: none;
   font-size: 140%;
-  border-bottom: thin solid $secondary-color;
-  color: $secondary-color;
-  background-color: $primary-color;
+  border-bottom: thin solid #FFC34C;
+  color: #FFC34C;
+  background-color: #0035AE;
   height: 50px;
 }
 
 /*---- End Contact -----*/
-
-footer{
-  background-color: $primary-colorV3;
-  color:white;
+footer {
+  background-color: #00164A;
+  color: white;
   font-family: 'Sorts Mill Goudy', serif;
   letter-spacing: 1px;
   padding: 4% 0%;
   font-size: 180%;
+  margin-top:5%;
 }
 
-footer a{
-  color:$secondary-color;
+footer a {
+  color: #FFC34C;
   font-size: 100%;
   padding: 2% .5%;
 }
-footer hr{
+
+footer hr {
   width: 50%;
 }
