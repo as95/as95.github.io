@@ -1,19 +1,7 @@
 @charset "UTF-8";
-
-@media (max-device-width: 1280px) {
-  h1{
-   font-size: 30px !important;
-  }
-  svg{
-    width: 30%;
-  }
-}
-
-
 body {
   background-color: #0035AE;
 }
-
 
 #navigation {
   padding: 3% 3%;
@@ -49,7 +37,11 @@ body {
   padding: 0%;
   margin-bottom: 10%;
 }
-
+@media (max-device-width: 1280px) {
+  h1{
+   font-size: 30px !important;
+  }
+}
 #homePage h1 {
   color: #FFC34C;
   font-size: 450%;
@@ -349,7 +341,6 @@ footer {
   letter-spacing: 1px;
   padding: 4% 0%;
   font-size: 180%;
-  margin-top:5%;
 }
 
 footer a {
