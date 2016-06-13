@@ -9,7 +9,7 @@
   }
 }
 body {
-  background-color: #0035AE;
+  background-color: #000030;
 }
 
 #navigation {
@@ -20,12 +20,12 @@ body {
 #navigation .navbar {
   border-style: none;
   border-radius: 0;
-  background-color: #0035AE;
+  background-color: #000030;
 }
 
 #navigation .navbar-brand {
   background-color: #FFC34C;
-  color: #0035AE;
+  color: #000030;
   font-weight: bold;
 }
 
@@ -42,7 +42,7 @@ body {
 #homePage .jumbotron {
   margin-top: 14%;
   font-family: 'Sorts Mill Goudy', serif;
-  background-color: #0035AE;
+  background-color: #000030;
   padding: 0%;
   margin-bottom: 10%;
 }
@@ -156,7 +156,7 @@ body {
   top: -0.7em;
   font-size: 1.5em;
   padding: 0 0.25em;
-  background: #0035AE;
+  background: #000030;
 }
 
 #aboutPage h4 {
@@ -210,7 +210,7 @@ body {
 }
 
 #portfolioPage #projects .col-sm-12 {
-  background-color: #00164A;
+  background-color: #000019;
   padding: 15%;
 }
 
@@ -249,14 +249,14 @@ body {
   font-size: 120%;
   font-family: 'Sorts Mill Goudy', serif;
   background-color: #FFC34C;
-  color: #0035AE;
+  color: #000030;
   border-style: none;
   padding: 4% 13% 2% 13%;
   font-weight: bold;
 }
 
 #portfolioPage .hiddenCol {
-  background-color: #0035AE !important;
+  background-color: #000030 !important;
 }
 
 /*------- Contact ------*/
@@ -292,13 +292,13 @@ input[type=text] {
   font-size: 140%;
   border-bottom: thin solid #FFC34C;
   color: #FFC34C;
-  background-color: #0035AE;
+  background-color: #000030;
 }
 
 #contactForm button {
   background-color: #FFC34C;
   border: none;
-  color: #0035AE;
+  color: #000030;
   padding: 1% 2%;
   font-size: 140%;
 }
@@ -335,13 +335,13 @@ textarea {
   font-size: 140%;
   border-bottom: thin solid #FFC34C;
   color: #FFC34C;
-  background-color: #0035AE;
+  background-color: #000030;
   height: 50px;
 }
 
 /*---- End Contact -----*/
 footer {
-  background-color: #00164A;
+  background-color: #000019;
   color: white;
   font-family: 'Sorts Mill Goudy', serif;
   letter-spacing: 1px;
