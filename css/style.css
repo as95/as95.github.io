@@ -1,361 +1,318 @@
-@charset "UTF-8";
-@media (max-device-width: 1280px) {
-  h1 {
-    font-size: 30px !important;
-  }
-
-  svg {
-    width: 30%;
-  }
-}
 body {
-  background-color: #000030;
+  font-family: "Roboto", sans-serif;
 }
 
-#navigation {
-  padding: 3% 3%;
-  font-family: 'Sorts Mill Goudy', serif;
+.small-gutter {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.small-gutter .col,
+.small-gutter [class*="col-"] {
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
-#navigation .navbar {
-  border-style: none;
-  border-radius: 0;
-  background-color: #000030;
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: black;
 }
 
-#navigation .navbar-brand {
-  background-color: #FFC34C;
-  color: #000030;
-  font-weight: bold;
+.navigation {
+  -webkit-transition: background-color .5s;
+  /* Safari */
+  transition: background-color .5s;
+  padding-bottom: 16px;
 }
-
-#navigation a {
-  color: white;
-  font-size: 175%;
-}
-
-#navigation .nav a:hover {
-  color: grey;
-  font-size: 160%;
-}
-
-#homePage .jumbotron {
-  margin-top: 14%;
-  font-family: 'Sorts Mill Goudy', serif;
-  background-color: #000030;
+.navigation .navbar {
   padding: 0%;
-  margin-bottom: 10%;
+  padding-top: 18px;
+  padding-bottom: .5%;
+}
+.navigation button {
+  margin-top: 2%;
+  border-color: transparent !important;
+}
+.navigation .navbar-brand a {
+  color: black;
+  font-weight: 600;
+}
+.navigation .rLogo {
+  background-color: #E3001C;
+  color: white !important;
+  font-weight: 400 !important;
+  margin-right: 15px;
+  padding: 10px 12px;
+}
+.navigation span {
+  color: black;
+}
+.navigation .navbar-light .navbar-nav .nav-link {
+  color: black;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  font-size: .9em;
+  text-transform: uppercase;
+  margin-left: 25px;
+  -webkit-transition: color .25s;
+  /* Safari */
+  transition: color .25s;
+}
+.navigation .navbar-toggler-right {
+  right: 0rem;
+}
+.navigation .navbar-toggler {
+  padding: 0px;
+}
+.navigation .nav-link:hover,
+.navigation .nav-link:focus {
+  color: black !important;
+}
+.navigation li {
+  font-size: .9em;
 }
 
-#homePage h1 {
-  color: #FFC34C;
-  font-size: 450%;
-  font-weight: bold;
+.frontpage {
+  color: black;
+  height: 100vh;
+  padding-top: 30vh;
 }
-
-#homePage p {
-  color: white;
-}
-
-#homePage a {
-  width: 30px;
-  margin-right: 1%;
-  color: #6090FE;
-  font-size: 240%;
-  margin-left: 1%;
-}
-
-#homePage #line {
+.frontpage hr {
   float: left;
-}
-
-#homePage #facebookLogo {
-  margin-left: 6% !important;
-}
-
-#aboutPage {
-  margin-top: 5%;
-  font-family: 'Sorts Mill Goudy', serif;
-}
-
-#aboutPage #aboutHeader h1 {
-  padding: 10%;
-}
-
-#aboutPage h1 {
-  color: white;
-  font-size: 450%;
-  font-weight: bold;
-  line-height: 130%;
-}
-
-#aboutPage h3 {
-  color: white;
-  margin-top: 6%;
-  font-size: 220%;
-  line-height: 130%;
-  font-family: 'Oswald', sans-serif;
-}
-
-#aboutPage .col-sm-1 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  writing-mode: tb-rl;
-  transform: rotate(180deg);
-  margin-top: 16%;
-}
-
-#aboutPage p {
-  color: #6090FE;
-  font-size: 150%;
-  font-family: 'Crete Round', serif;
-}
-
-#aboutPage #aboutMeSection img {
-  width: 100%;
-}
-
-#aboutPage #aboutMeSection h3 {
-  padding-top: 10%;
-}
-
-#aboutPage #aboutMeSection p {
-  padding-top: 6%;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#aboutPage #aboutMeSection p u {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-}
-
-#aboutPage #resume {
-  margin-top: 5%;
-}
-
-#divider {
-  margin-top: 8%;
-  margin-bottom: 8%;
   border: none;
-  border-top: medium double #333;
-  color: #6090FE;
-  text-align: center;
-  background-color: #6090FE;
-  width: 35%;
-  height: 2px;
+  height: 10px;
+  /* Set the hr color */
+  color: #333;
+  /* old IE */
+  background-color: #333;
+  /* Modern Browsers */
+}
+.frontpage button {
   border-style: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 16px 3px;
+  padding: 8px 25px 7px 25px;
+  text-transform: uppercase;
+}
+.frontpage .workButton {
+  color: black;
+  border-style: solid;
+  border-color: black;
+  background-color: white !important;
+  -webkit-transition: color .4s, background-color .4s;
+  /* Safari */
+  transition: color .4s, background-color .4s;
+}
+.frontpage .workButton:hover {
+  color: white;
+  border-color: #E3001C;
+  background-color: #E3001C !important;
+}
+.frontpage .contactButton {
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-color: black;
+  -webkit-transition: color .4s, background-color .4s;
+  /* Safari */
+  transition: color .4s, background-color .4s;
+}
+.frontpage .contactButton:hover {
+  color: white;
+  background-color: #E3001C;
+  border-color: #E3001C;
 }
 
-#divider:after {
-  content: "ya";
-  font-family: 'Sorts Mill Goudy', serif;
-  display: inline-block;
+.underline {
   position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: #000030;
 }
-
-#aboutPage h4 {
-  color: #A7C1FC;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 130%;
-}
-
-#aboutPage h5 {
-  color: #FFF;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 200%;
-}
-
-#aboutPage h6 {
-  color: #6090FE;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 115%;
-}
-
-#aboutPage #resume h1 {
-  margin-top: 3%;
-  margin-bottom: 2%;
-}
-
-#aboutPage #resume .row {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border-top: solid;
-  border-width: 2px;
-  border-color: #6090FE;
-}
-
-#portfolioPage h1 {
-  color: white;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 500%;
-  font-weight: bold;
-}
-
-#portfolioPage .row {
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-
-#portfolioPage #projects .col-sm-4 {
-  margin-top: 5%;
-}
-
-#portfolioPage #projects .col-sm-12 {
-  background-color: #000019;
-  padding: 15%;
-}
-
-#portfolioPage #projects h3 {
-  color: white;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 200%;
-}
-
-#portfolioPage #projects hr {
-  width: 30%;
-  margin-left: 0;
-  text-align: left;
-  border-color: #FFC34C;
-  background-color: #FFC34C;
-  height: .5px;
-}
-
-#portfolioPage #projects h4 {
-  color: #A7C1FC;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-}
-
-#portfolioPage #projects p {
-  color: #FFC34C;
-  font-family: 'Sorts Mill Goudy', serif;
-  margin-top: 8%;
-  font-size: 120%;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#portfolioPage button {
-  margin-top: 10%;
-  font-size: 120%;
-  font-family: 'Sorts Mill Goudy', serif;
-  background-color: #FFC34C;
-  color: #000030;
-  border-style: none;
-  padding: 4% 13% 2% 13%;
-  font-weight: bold;
-}
-
-#portfolioPage .hiddenCol {
-  background-color: #000030 !important;
-}
-
-/*------- Contact ------*/
-#contactPage {
-  padding: 0% 5% 3% 5%;
-  font-family: 'Sorts Mill Goudy', serif;
-  width: 90%;
-  margin-top: 5%;
-  animation-duration: 2s;
-}
-
-#contactPage h1 {
-  color: white;
-  font-size: 500%;
-  font-weight: bold;
-  line-height: 130%;
-}
-
-#contactPage p {
-  font-size: 140%;
-  color: white;
-}
-
-#contactPage .container-fluid {
-  padding: 1% 0% 1% 0%;
-  margin: 0% 0% 2% 0%;
-}
-
-input[type=text] {
-  width: 100%;
-  display: block;
-  border: none;
-  font-size: 140%;
-  border-bottom: thin solid #FFC34C;
-  color: #FFC34C;
-  background-color: #000030;
-}
-
-#contactForm button {
-  background-color: #FFC34C;
-  border: none;
-  color: #000030;
-  padding: 1% 2%;
-  font-size: 140%;
-}
-
-button span {
+.underline:hover, .underline:focus, .underline:active {
   cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
 }
-
-button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-button:hover span {
-  padding-right: 25px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-textarea {
+.underline:hover:after, .underline:focus:after, .underline:active:after {
   width: 100%;
-  display: block;
+}
+.underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 3px;
+  background-color: #000;
+  width: 0;
+  transition: width .4s;
+}
+
+.thin-underline {
+  position: relative;
+}
+.thin-underline:hover, .thin-underline:focus, .thin-underline:active {
+  cursor: pointer;
+}
+.thin-underline:hover:after, .thin-underline:focus:after, .thin-underline:active:after {
+  width: 100%;
+}
+.thin-underline:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 1px;
+  background-color: #000;
+  width: 0;
+  transition: width .4s;
+}
+
+.work img {
+  width: 100%;
+}
+.work h1 {
+  color: #E3001C;
+  padding-top: 90px;
+}
+.work p {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-top: 25px;
+  color: #6F6F6F;
+  line-height: 35px;
+  text-align: justify;
+}
+
+.about .top-padding {
+  padding-top: 90px;
+}
+.about h1 {
+  color: #E3001C;
+  padding-top: 90px;
+}
+.about p {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-top: 25px;
+  color: #6F6F6F;
+  line-height: 35px;
+  text-align: justify;
+}
+.about img {
+  width: 100%;
+}
+.about h3 {
+  margin-top: 40px;
+}
+
+.contact {
+  margin-top: 65px;
+  padding-top: 120px;
+  margin-bottom: 200px;
+}
+.contact h1 {
+  color: #E3001C;
+}
+.contact p {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  color: #6F6F6F;
+  line-height: 35px;
+}
+.contact input, .contact textarea {
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
   border: none;
-  font-size: 140%;
-  border-bottom: thin solid #FFC34C;
-  color: #FFC34C;
-  background-color: #000030;
-  height: 50px;
+  border-bottom: solid;
+  border-color: #DEDEDE;
+  border-width: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: border-color .4s;
+  /* Safari */
+  transition: border-color .4s;
+}
+.contact .submit {
+  margin-top: 40px;
+  background-color: transparent;
+  width: 220px;
+  border-style: none;
+  border-left: solid;
+  border-width: 8px;
+  border-color: #E3001C;
+  font-size: 1.8em;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.contact .fa-long-arrow-right {
+  color: #E3001C;
+  font-size: 1.3em;
+  padding-left: 15px;
+}
+.contact input:hover, .contact textarea:hover {
+  border-color: #6F6F6F;
+}
+.contact input::-webkit-input-placeholder, .contact textarea::-webkit-input-placeholder {
+  color: black;
+  font-size: 1.1em;
+}
+.contact input:-moz-placeholder, .contact textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+  font-size: 1.1em;
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+  font-size: 1.1em;
+}
+.contact input:-ms-input-placeholder {
+  color: black;
+  font-size: 1.1em;
 }
 
-/*---- End Contact -----*/
-footer {
-  background-color: #000019;
+.footer {
+  padding-top: 30px;
+  padding-bottom: 1px;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+.footer h4 {
   color: white;
-  font-family: 'Sorts Mill Goudy', serif;
-  letter-spacing: 1px;
-  padding: 4% 0%;
-  font-size: 180%;
-  margin-top: 5%;
+  padding: 0%;
+  font-size: 1em;
+}
+.footer p {
+  color: #aaa;
+  font-size: .8em;
+  font-weight: 400;
+  margin-top: 15px;
 }
 
-footer a {
-  color: #FFC34C;
-  font-size: 100%;
-  padding: 2% .5%;
+.hidden-mobile {
+  display: none;
 }
 
-footer hr {
-  width: 50%;
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 5.5em;
+  }
+
+  .hidden-mobile {
+    display: block;
+  }
+
+  .navigation .top-line {
+    padding-top: 0px;
+  }
+
+  .contact .container, .about .container {
+    width: 60%;
+  }
 }

@@ -1,364 +1,372 @@
-@charset "UTF-8";
+$color-1: #56CBF9;
+$red: #E3001C;
+$grey-1: #6F6F6F;
+$grey-2: #DEDEDE;
 
-@media (max-device-width: 1280px) {
-  h1{
-   font-size: 30px !important;
-  }
-  svg{
-    width: 30%;
-  }
-}
-
-
+$font-1: 'Roboto',
+sans-serif;
 body {
-  background-color: #0035AE;
+  font-family: $font-1;
 }
 
+.small-gutter{
+  margin-right: 3px;
+  margin-left: 3px;
 
-#navigation {
-  padding: 3% 3%;
-  font-family: 'Sorts Mill Goudy', serif;
+  .col,
+  [class*="col-"] {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
 }
 
-#navigation .navbar {
-  border-style: none;
-  border-radius: 0;
-  background-color: #0035AE;
+h1 {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color:black;
 }
 
-#navigation .navbar-brand {
-  background-color: #FFC34C;
-  color: #0035AE;
-  font-weight: bold;
+.navigation {
+  -webkit-transition: background-color .5s;
+  /* Safari */
+  transition: background-color .5s;
+  padding-bottom: 16px;
+
+  .navbar{
+    padding: 0%;
+    padding-top: 18px;
+    padding-bottom: .5%;
+  }
+  button {
+    margin-top: 2%;
+    border-color: transparent !important;
+  }
+  .navbar-brand a{
+    color: black;
+    font-weight: 600;
+  }
+  .rLogo {
+    background-color: $red;
+    color: white !important;
+    font-weight: 400 !important;
+    margin-right: 15px;
+    padding: 10px 12px;
+  } 
+  span {
+    color: black;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: .9em;
+    text-transform: uppercase;
+    margin-left: 25px;
+    -webkit-transition: color .25s;
+    /* Safari */
+    transition: color .25s;
+  }
+  .navbar-toggler-right{
+    right: 0rem;
+  }
+  .navbar-toggler{
+    padding: 0px;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: black !important;
+  }
+  li {
+    font-size: .9em;
+  }
 }
 
-#navigation a {
-  color: white;
-  font-size: 175%;
+.frontpage {
+  color: black;
+  height: 100vh;
+  padding-top: 30vh;
+  hr {
+    float: left;
+    border: none;
+    height: 10px;
+    /* Set the hr color */
+    color: #333;
+    /* old IE */
+    background-color: #333;
+    /* Modern Browsers */
+  }
+  button {
+    border-style: none;
+    font-family: $font-1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 16px 3px;
+    padding: 8px 25px 7px 25px;
+    text-transform: uppercase;
+  }
+  .workButton {
+    color: black;
+    border-style: solid;
+    border-color: black;
+    background-color: white !important;
+    -webkit-transition: color .4s, background-color .4s;
+    /* Safari */
+    transition: color .4s, background-color .4s;
+  }
+  .workButton:hover {
+    color: white;
+    border-color: $red;
+    background-color: $red !important;
+  }
+  .contactButton {
+    color: white;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    -webkit-transition: color .4s, background-color .4s;
+    /* Safari */
+    transition: color .4s, background-color .4s;
+  }
+  .contactButton:hover {
+    color: white;
+    background-color: $red;
+    border-color: $red;
+  }
 }
 
-#navigation .nav a:hover {
-  color: grey;
-  font-size: 160%;
-}
-
-#homePage .jumbotron {
-  margin-top: 14%;
-  font-family: 'Sorts Mill Goudy', serif;
-  background-color: #0035AE;
-  padding: 0%;
-  margin-bottom: 10%;
-}
-
-#homePage h1 {
-  color: #FFC34C;
-  font-size: 450%;
-  font-weight: bold;
-}
-
-#homePage p {
-  color: white;
-}
-
-#homePage a {
-  width: 30px;
-  margin-right: 1%;
-  color: #6090FE;
-  font-size: 240%;
-  margin-left: 1%;
-}
-
-#homePage #line {
-  float: left;
-}
-
-#homePage #facebookLogo {
-  margin-left: 6% !important;
-}
-
-#aboutPage {
-  margin-top: 5%;
-  font-family: 'Sorts Mill Goudy', serif;
-}
-
-#aboutPage #aboutHeader h1 {
-  padding: 10%;
-}
-
-#aboutPage h1 {
-  color: white;
-  font-size: 450%;
-  font-weight: bold;
-  line-height: 130%;
-}
-
-#aboutPage h3 {
-  color: white;
-  margin-top: 6%;
-  font-size: 220%;
-  line-height: 130%;
-  font-family: 'Oswald', sans-serif;
-}
-
-#aboutPage .col-sm-1 {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  writing-mode: tb-rl;
-  transform: rotate(180deg);
-  margin-top: 16%;
-}
-
-#aboutPage p {
-  color: #6090FE;
-  font-size: 150%;
-  font-family: 'Crete Round', serif;
-}
-
-#aboutPage #aboutMeSection img {
-  width: 100%;
-}
-
-#aboutPage #aboutMeSection h3 {
-  padding-top: 10%;
-}
-
-#aboutPage #aboutMeSection p {
-  padding-top: 6%;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#aboutPage #aboutMeSection p u {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-}
-
-#aboutPage #resume {
-  margin-top: 5%;
-}
-
-#divider {
-  margin-top: 8%;
-  margin-bottom: 8%;
-  border: none;
-  border-top: medium double #333;
-  color: #6090FE;
-  text-align: center;
-  background-color: #6090FE;
-  width: 35%;
-  height: 2px;
-  border-style: none;
-}
-
-#divider:after {
-  content: "ya";
-  font-family: 'Sorts Mill Goudy', serif;
-  display: inline-block;
+.underline {
   position: relative;
-  top: -0.7em;
-  font-size: 1.5em;
-  padding: 0 0.25em;
-  background: #0035AE;
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    &:after {
+      width: 100%;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 3px;
+    background-color: #000;
+    width: 0;
+    transition: width .4s;
+  }
 }
 
-#aboutPage h4 {
-  color: #A7C1FC;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 130%;
-}
-
-#aboutPage h5 {
-  color: #FFF;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 200%;
-}
-
-#aboutPage h6 {
-  color: #6090FE;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 115%;
-}
-
-#aboutPage #resume h1 {
-  margin-top: 3%;
-  margin-bottom: 2%;
-}
-
-#aboutPage #resume .row {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border-top: solid;
-  border-width: 2px;
-  border-color: #6090FE;
-}
-
-#portfolioPage h1 {
-  color: white;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 500%;
-  font-weight: bold;
-}
-
-#portfolioPage .row {
-  margin-top: 0%;
-  margin-bottom: 0%;
-}
-
-#portfolioPage #projects .col-sm-4 {
-  margin-top: 5%;
-}
-
-#portfolioPage #projects .col-sm-12 {
-  background-color: #00164A;
-  padding: 15%;
-}
-
-#portfolioPage #projects h3 {
-  color: white;
-  font-family: 'Sorts Mill Goudy', serif;
-  font-size: 200%;
-}
-
-#portfolioPage #projects hr {
-  width: 30%;
-  margin-left: 0;
-  text-align: left;
-  border-color: #FFC34C;
-  background-color: #FFC34C;
-  height: .5px;
-}
-
-#portfolioPage #projects h4 {
-  color: #A7C1FC;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-}
-
-#portfolioPage #projects p {
-  color: #FFC34C;
-  font-family: 'Sorts Mill Goudy', serif;
-  margin-top: 8%;
-  font-size: 120%;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-#portfolioPage button {
-  margin-top: 10%;
-  font-size: 120%;
-  font-family: 'Sorts Mill Goudy', serif;
-  background-color: #FFC34C;
-  color: #0035AE;
-  border-style: none;
-  padding: 4% 13% 2% 13%;
-  font-weight:bold;
-}
-
-#portfolioPage .hiddenCol {
-  background-color: #0035AE !important;
-}
-
-/*------- Contact ------*/
-#contactPage {
-  padding: 0% 5% 3% 5%;
-  font-family: 'Sorts Mill Goudy', serif;
-  width: 90%;
-  margin-top: 5%;
-  animation-duration: 2s;
-}
-
-#contactPage h1 {
-  color: white;
-  font-size: 500%;
-  font-weight: bold;
-  line-height: 130%;
-}
-
-#contactPage p {
-  font-size: 140%;
-  color: white;
-}
-
-#contactPage .container-fluid {
-  padding: 1% 0% 1% 0%;
-  margin: 0% 0% 2% 0%;
-}
-
-input[type=text] {
-  width: 100%;
-  display: block;
-  border: none;
-  font-size: 140%;
-  border-bottom: thin solid #FFC34C;
-  color: #FFC34C;
-  background-color: #0035AE;
-}
-
-#contactForm button {
-  background-color: #FFC34C;
-  border: none;
-  color: #0035AE;
-  padding: 1% 2%;
-  font-size: 140%;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
+.thin-underline {
   position: relative;
-  transition: 0.5s;
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+    &:after {
+      width: 100%;
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    height: 1px;
+    background-color: #000;
+    width: 0;
+    transition: width .4s;
+  }
 }
 
-button span:after {
-  content: '»';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.work{
+  img{
+    width:100%;
+  }
+  h1{
+    color:$red;
+    padding-top: 90px;
+  }
+  
+  p{
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-top: 25px;
+    color: $grey-1;
+    line-height: 35px;
+    text-align: justify;
+  }
+}
+.about{
+  .top-padding{
+    padding-top: 90px;
+  }
+  h1{
+    color:$red;
+    padding-top: 90px;
+  }
+  p{
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-top: 25px;
+    color: $grey-1;
+    line-height: 35px;
+    text-align: justify;
+  }
+  
+  img{
+    width: 100%;
+  }
+  
+  h3{
+    margin-top: 40px;
+  }
 }
 
-button:hover span {
-  padding-right: 25px;
+
+
+.contact{
+  margin-top: 65px;
+  padding-top: 120px;
+  margin-bottom: 200px;
+  h1{
+    color: $red;
+  }
+  p{
+    font-weight: 300;
+    font-size: 1.1em;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: $grey-1;
+    line-height: 35px;
+  }
+  input, textarea{
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 50px;
+    font-family: $font-1;
+    border: none;
+    border-bottom: solid;
+    border-color: $grey-2;
+    border-width: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-transition: border-color .4s;
+    /* Safari */
+    transition: border-color .4s;
+  }
+  .submit{
+    margin-top: 40px;
+    background-color: transparent;
+    width: 220px;
+    border-style: none;
+    border-left: solid;
+    border-width: 8px;
+    border-color: $red;
+    font-size: 1.8em;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+  .fa-long-arrow-right{
+    color: $red;
+    font-size: 1.3em;
+    padding-left: 15px;
+  }
+  input:hover, textarea:hover{
+    border-color: $grey-1;
+  }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: black;
+    font-size: 1.1em;
+  }
+
+  input:-moz-placeholder, textarea:-moz-placeholder { /* Firefox 18- */
+    color: black;  
+    font-size: 1.1em;
+  }
+
+  input::-moz-placeholder, textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: black; 
+    font-size: 1.1em; 
+  }
+
+  input:-ms-input-placeholder {  
+    color: black;  
+    font-size: 1.1em;
+  }
+  
 }
 
-button:hover span:after {
-  opacity: 1;
-  right: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 1px;
+  h4 {
+    color: white;
+    padding: 0%;
+    font-size: 1em;
+  }
+  p {
+    color: #aaa;
+    font-size: .8em;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  background-color: black;
+  font-family: $font-1;
 }
 
-textarea {
-  width: 100%;
-  display: block;
-  border: none;
-  font-size: 140%;
-  border-bottom: thin solid #FFC34C;
-  color: #FFC34C;
-  background-color: #0035AE;
-  height: 50px;
+
+
+
+
+
+
+
+.hidden-mobile {
+  display: none;
 }
 
-/*---- End Contact -----*/
-footer {
-  background-color: #00164A;
-  color: white;
-  font-family: 'Sorts Mill Goudy', serif;
-  letter-spacing: 1px;
-  padding: 4% 0%;
-  font-size: 180%;
-  margin-top:5%;
-}
-
-footer a {
-  color: #FFC34C;
-  font-size: 100%;
-  padding: 2% .5%;
-}
-
-footer hr {
-  width: 50%;
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 5.5em;
+  }
+  .hidden-mobile {
+    display: block;
+  }
+  .navigation{
+    .top-line{
+      padding-top: 0px;
+    }
+  }
+  
+  .contact, .about{
+    .container{
+      width: 60%;
+    }
+    
+  }
 }

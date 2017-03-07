@@ -1,29 +1,27 @@
-$(document).ready(function() {
-
-
-$(".toggle_container").hide(); 
-$("button.reveal").click(function(){
-    $(this).toggleClass("active").next().slideToggle("fast");
+$(document).ready(function(){
+ //$('.navigation').hide();
+ //$('.frontpage').hide();
+ //$('.work').hide();
+ ///$('.about').hide();
+ //$('.contact').hide();
+  
+  
+  $(window).scroll(function(){
     
-    if ($.trim($(this).text()) === 'About') {
-        $(this).text('Less');
-    } else {
-        $(this).text('About');        
-    }
-    
-    return false; 
-});
- $("a[href='" + window.location.hash + "']").parent(".reveal").click();
-    $('.smoothScroll').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 700); 
-        return false;
-      }
+    var scrollLocation = $(window).scrollTop();
+
+    if (scrollLocation <= 30) {
+      $('.navigation').css('background-color','transparent');
+      $('.nav-link').css('color','rgba(0, 0, 0, 1)');
+      $('.siteTitle').css('color', 'black');
+      $('.siteTitle').css('font-weight', '600');
+      $('.fa-bars').css('color', 'black');
+    } else if (scrollLocation > 30) {
+      $('.navigation').css('background-color','rgba(0, 0, 0, .9)');
+      $('.nav-link').css('color','rgba(255, 255, 255, 1)');
+      $('.siteTitle').css('color', 'white');
+      $('.siteTitle').css('font-weight', '400');
+      $('.fa-bars').css('color', 'white');
     }
   });
 });
