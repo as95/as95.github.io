@@ -1,132 +1,235 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-    
+
   <meta charset="UTF-8">
   <title>rilke.us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- GOOGLE FONTS-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
+  <!-- Normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
+  <!-- Bootstrap CSS -->
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-    
+
+  <!-- Animate -->
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
 
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 
 </head>
-    
-    
+
+
 <body>
   <div class='navigation fixed-top animated fadeIn'>
-  <div class='container'>
-    <nav class="navbar navbar-toggleable-sm navbar-light">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class='container'>
+      <nav class="navbar navbar-toggleable-sm navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
     <span class=""><i class="fa fa-bars" aria-hidden="true"></i></span>
   </button>
-      <div class="navbar-brand">
-        <a class='rLogo'>as</a> <a href="#" class='siteTitle'>rilke.us</a>
-      </div>
+        <div class="navbar-brand">
+          <a class='rLogo'>as</a> <a href="#" class='siteTitle'>rilke.us</a>
+        </div>
 
-      <div class="collapse navbar-collapse" id="navbarContent">
+        <div class="collapse navbar-collapse" id="navbarContent">
 
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item top-line">
-            <a class="nav-link text-center thin-underline" href="#work">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-center thin-underline" href="#about">About</a>
-          </li>
-          <!--<li class="nav-item">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item top-line">
+              <a class="nav-link text-center thin-underline" href="#work">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-center thin-underline" href="#about">About</a>
+            </li>
+            <!--           <li class="nav-item">
             <a class="nav-link text-center thin-underline" href="#">Bless Up</a>
-          </li>-->
-          <li class="nav-item">
-            <a class="nav-link text-center thin-underline" href="#contact">Contact</a>
-          </li>
-        </ul>
+          </li> -->
+            <li class="nav-item">
+              <a class="nav-link text-center thin-underline" href="#contact">Contact</a>
+            </li>
+          </ul>
 
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class='frontpage sect'>
+    <div class='container'>
+      <h1 class='animated fadeIn'>The assorted portfolio and publications of Amit Sen.</h1>
+      <svg class='animated fadeInLeft headLine hidden-mobile' height="30" id='line'>
+        <line x1="0" y1="25" x2="280" y2="25" style="stroke:rgb(41,43,44);stroke-width:7" />
+      </svg>
+      <a href='#work'><button class='workButton animated fadeIn hidden-mobile' href='#work'>Work</button></a>
+      <a href='#contact'><button class='contactButton animated fadeIn hidden-mobile'>Contact</button></a>
+    </div>
+  </div>
+
+  <div class='work sect sect-padding' id='work'>
+    <div class='zcontainer'>
+      <h1 class='text-center red-text'>Work</h1>
+      <p class='text-center bottom-padding'>View some recent projects.</p>
+
+
+      <div class='portfolio-item closed planets bw'>
+        <div class='portfolio-header'>
+          <h2>The Planets</h2>
+          <h4>Personal Project</h4>
+        </div>
       </div>
-    </nav>
-  </div>
-</div>
 
+      <div class='portfolio-content planets-content'>
+        <p class='subtitle'>Personal Project</p>
+        <p class='subtitle'>AFrame, JavaScript, jQuery, HTML5</p>
+        <p class='subtitle'><a href='#'>Link</a></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet neque est, sed rhoncus mi mattis a. Morbi sem
+          magna, iaculis vel porttitor sit amet, iaculis sit amet neque. </p>
+      </div>
 
-<div class='frontpage'>
-  <div class='container'>
-    <h1 class='animated fadeIn'>The assorted portfolio and publications of Amit Sen.</h1>
-    <svg class='animated fadeInLeft headLine' height="30" id='line'><line x1="0" y1="25" x2="280" y2="25" style="stroke:rgb(41,43,44);stroke-width:7" /></svg>
-    <a href='#work'><button class='workButton animated fadeIn' href='#work'>Work</button></a>
-    <a href='#contact'><button class='contactButton animated fadeIn'>Contact</button></a>
-  </div>
-</div>
+      <div class='portfolio-item closed vpl bw'>
+        <div class='portfolio-header'>
+          <h2>VPL</h2>
+          <h4>Personal Project</h4>
+        </div>
+      </div>
 
+      <div class='portfolio-content vpl-content'>
+        <p class='subtitle'>Personal Project</p>
+        <p class='subtitle'>jQuery, JavaScript, Bootstrap 4 (Alpha), SCSS, HTML5</p>
+        <p class='subtitle'><a href='#'>Link</a></p>
+      </div>
 
-<div class='work' id='work'>
-  <div class='container'>
-    <h1 class='text-center'>Work</h1>
-    <p class='text-center'>Some recent projects.</p>
+      <div class='portfolio-item closed loading-deck bw'>
+        <div class='portfolio-header'>
+          <h2>TG Loading Deck</h2>
+          <h4>Tech.Global | OGI | UA</h4>
+        </div>
+      </div>
+
+      <div class='portfolio-content loading-deck-content'>
+        <p class='subtitle'>Made for Tech.Global under the Office of Global Initiatives</p>
+        <p class='subtitle'>AFrame, JavaScript, jQuery, Bootstrap 3, CSS3, HTML5</p>
+        <p class='subtitle'><a href='#'>Link</a></p>
+      </div>
+
+      <div class='portfolio-item closed arizona-sase bw'>
+        <div class='portfolio-header'>
+          <h2>Arizona SASE </h2>
+          <h4>SASE | UA</h4>
+        </div>
+      </div>
+
+      <div class='portfolio-content arizona-sase-content'>
+        <p class='subtitle' class='subtitle'>Made for the Society of Asian Scientists and Engineers at the University of Arizona</p>
+        <p class='subtitle'><a href='#'>Link</a></p>
+        <p class='subtitle'>AFrame, JavaScript, jQuery, HTML5</p>
+      </div>
+
+      <div class='portfolio-item closed wiki-viewer bw'>
+        <div class='portfolio-header'>
+          <h2>Wikipedia Viewer</h2>
+          <h4>Personal Project</h4>
+        </div>
+      </div>
+
+      <div class='portfolio-content wiki-viewer-content'>
+        <p class='subtitle'>Personal Project</p>
+        <p class='subtitle'>jQuery, JavaScript, Bootstrap 4 (Alpha), SCSS, HTML5</p>
+        <p class='subtitle'><a href='#'>Link</a></p>
+      </div>
+
+      <!--<div class='row small-gutter'>
+      <div class='col-lg-6'>
+        <a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A04%20-%20The%20Planets-min.png' alt=''/></a>
+      </div>
+      <div class='col-lg-6'>
+      </div>
+    </div>
+    
+    
     <div class='row small-gutter'>
-      
+      <div class='col-lg-3 col-6'>
+        <a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A04%20-%20The%20Planets-min.png' alt=''/></a>
+      </div>
+      <div class='col-lg-3 col-6'>
+        <a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A04%20-%20The%20Planets-min.png' alt=''/></a>
+      </div>
+      <div class='col-lg-3 col-6'>
+        <a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A04%20-%20The%20Planets-min.png' alt=''/></a>
+      </div>
+      <div class='col-lg-3 col-6'>
+        <a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A04%20-%20The%20Planets-min.png' alt=''/></a>
+      </div>
+    </div>-->
+
+
+      <!--<div class='row small-gutter'>
       <div class='col-sm-6'><a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A04%20-%20The%20Planets-min.png' alt=''/></a></div>
       <div class='col-sm-6'><a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A05%20-%20SASE.png' alt=''/></a></div>
       <div class='col-sm-6'><a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A06%20-%20Loading%20Deck.png' alt=''/></a></div>
       <div class='col-sm-6'><a href='#'><img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A03%20-%20VPL.png' alt=''/></a></div>
+    </div>-->
     </div>
   </div>
-</div>
 
-<div class='about' id='about'>
-  <div class='container'>
-    <h1 class='text-center'>About</h1>
-    <p class='text-center'>Learn more about me.</p>
+  <div class='about sect sect-padding' id='about'>
+    <div class='container'>
+      <h1 class='text-center'>About</h1>
+      <p class='text-center'>Learn more about me.</p>
 
-    <div class='row top-padding'>
-      <div class='col-md-5 text-center'>
-        <img alt='picture of me' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A02%20-%20Portrait.png' />
+      <div class='row '>
+        <div class='col-sm-2'></div>
+        <div class='col-sm-3 text-center hidden-mobile'>
+          <img alt='picture of me' src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20A02%20-%20Portrait.png' />
+        </div>
+
+        <div class='col-md-5'>
+          <h3 class='text-center'>Amit Sen // Lil Rainy</h3>
+          <p></p>
+          <!--<p>I am a developer at <a href='#'>Tech.Global</a>, under the Office of Global Initiatives at the University of Arizona. Additionally, I am currently based in Tucson as I finish up my undergraduate at the UA's <a href='#'>School of Information</a>.
+          <br/><br/><b>On the web:</b>&nbsp;&nbsp; <br/><a href=#>CodePen</a> | <a href=#>Email</a> | <a href=#>Resume</a> | <a href=#>Git</a></p>-->
+        </div>
+        <div class='col-sm-2'></div>
+
+
       </div>
-
-      <div class='col-md-7'>
-        <h3>Hi, I'm Amit.</h3>
-        <p>I am a developer at <a href='#'>Tech.Global</a>, under the Office of Global Initiatives at the University of Arizona. Additionally, I am currently based in Tucson as I finish up my undergraduate at the UA's <a href='#'>School of Information</a>. <br/><br/><b>On the web:</b>&nbsp;&nbsp; <br/><a href=#>CodePen</a> | <a href=#>Email</a> | <a href=#>Resume</a> | <a href=#>Git</a></p>
-      </div>
-
-
     </div>
   </div>
-</div>
 
-<div class='contact' id='contact'>
-  <div class='container'>
-    <h1 class='text-center'>Contact</h1>
-    <p class='text-center'> Feel free to reach out to me, whether you have a project in mind, want to collaborate, or if there is any way I can help. Let's stay connected.</p>
-    <form>
-      <input placeholder='Name *' /><br/>
-      <input placeholder='Email *' /><br/>
-      <textarea placeholder="What's on your mind?" rows="5"></textarea>
-      <button class='submit' type="submit">Submit &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
-    </form>
+  <div class='contact sect sect-padding' id='contact'>
+    <div class='container'>
+      <h1 class='text-center red-text'>Contact</h1>
+      <p class='text-center'> Feel free to reach out to me, whether you have a project in mind, want to collaborate, or if there is any way I can
+        help. Let's stay connected.</p>
+      <form>
+        <input placeholder='Name *' /><br/>
+        <input placeholder='Email *' /><br/>
+        <textarea placeholder="What's on your mind?" rows="5"></textarea>
+        <button class='submit' type="submit">Submit &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+      </form>
+    </div>
   </div>
-</div>
 
-
-<div class='footer'>
-  <div class='container text-center'>
-    <h4>WORK&nbsp; | &nbsp; ABOUT &nbsp; | &nbsp; CONTACT</h4>
-    <p>© 2017 rilke.us</p>
+  <div class='footer'>
+    <div class='container text-center'>
+      <h4>WORK&nbsp; | &nbsp; ABOUT &nbsp; | &nbsp; CONTACT</h4>
+      <p class='alt-p'>© 2017 rilke.us</p>
+    </div>
   </div>
-</div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.2/js/tether.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
 
-    <script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 
 </body>
-</html>
 
+</html>
