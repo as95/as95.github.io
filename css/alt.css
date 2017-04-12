@@ -1,0 +1,29 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 10%;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 500px;
+    padding: 0%;
+  }
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+p {
+  font-size: 14.5px;
+  letter-spacing: .2px;
+}
+
+img {
+  height: 150px;
+}
