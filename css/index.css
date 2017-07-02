@@ -84,6 +84,7 @@ body {
 /****************************
 ****  END DESKTOP NAV 1  ****
 ****************************/
+
 /****************************
 **** START DESKTOP NAV 2 ****
 ****************************/
@@ -274,21 +275,33 @@ body {
 .jumbo .title {
   color: #fefefe;
   display: block;
-  font-size: 86px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 90px;
+  line-height: 65px;
   padding: 24vh 20px 0px 20px;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
 }
+
+@media(min-width: 567px){
+  .jumbo .title{
+    font-size: 86px;
+    line-height: 90px;
+  }
+  .jumbo .subtitle{
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+
 .jumbo .subtitle {
   color: #D9D9D9;
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
-  line-height: 33px;
+  line-height: 25px;
   margin-top: 25px;
-  padding: 20px 30px 0px 30px;
+  padding: 20px 20px 0px 20px;
   text-align: center;
 }
 .jumbo .subtitle-div {
@@ -427,10 +440,17 @@ body {
 .projects .big-proj .subtitle {
   color: white;
   display: block;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   margin-top: 10px;
 }
+
+@media(min-width: 567px){
+  .projects .big-proj .subtitle{
+    font-size: 20px;
+  }
+}
+
 .projects .big-proj button {
   color: white;
   cursor: pointer;
@@ -587,10 +607,17 @@ body {
 .about .red-div .title {
   color: white;
   display: block;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: 300;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.36);
 }
+
+@media (min-width: 567px){
+  .about .red-div .title{
+    font-size: 70px;
+  }
+}
+
 .about .red-div .subtitle {
   color: white;
   display: block;
@@ -629,7 +656,7 @@ body {
 .about .c-card .social-link {
   color: #222;
   display: inline-block;
-  font-size: 28px;
+  font-size: 26px;
   margin: 0 8px;
 }
 .about .c-card .social-link a {
