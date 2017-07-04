@@ -231,7 +231,7 @@ body {
 .jumbo {
   height: 100vh;
   background: #e0e0e0;
-  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/rilke-tree.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/jumbo-bg.jpeg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -386,14 +386,14 @@ body {
   outline: none;
 }
 .projects .row .c-0 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/img/the-planets-bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .projects .row .c-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://images.pexels.com/photos/247646/pexels-photo-247646.jpeg?h=350&auto=compress&cs=tinysrgb") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("unheard-language-bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -422,7 +422,7 @@ body {
   padding-left: 8px;
 }
 .projects .big-proj {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/rilke-milky-way.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("smallclaw-bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
