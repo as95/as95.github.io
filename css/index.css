@@ -526,42 +526,42 @@ body {
   font-size: 18px;
 }
 .pens .pen-carousel .c-0 {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20Cacti2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/Pen-SignIn.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .pens .pen-carousel .c-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20Cacti2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/Pen-Checkout.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .pens .pen-carousel .c-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20Cacti2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/Pen-LandingPage.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .pens .pen-carousel .c-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20Cacti2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/Pen-Calculator.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .pens .pen-carousel .c-4 {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20Cacti2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/Pen-Profile.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .pens .pen-carousel .c-5 {
-  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/566003/Rilke%20-%20Cacti2.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/Pen-Settings.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
