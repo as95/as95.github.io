@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Avenir LT Std';
   margin: 0px;
 }
 
@@ -386,7 +386,7 @@ body {
   outline: none;
 }
 .projects .row .c-0 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/the-planets-bg.jpeg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://ucarecdn.com/3cdc83e8-b14a-43ea-9555-da988b4741ea/") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -400,14 +400,14 @@ body {
   background-size: cover;
 }
 .projects .row .c-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://brand.arizona.edu/sites/default/files/styles/large/public/original_photos/arizona_campus_fireworks_sample_7-x3.jpg?itok=Kkt4Omqf") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://ucarecdn.com/6a4920ad-44cd-41f1-85e5-f4eadbb1dec6/") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .projects .row .c-3 {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://brand.arizona.edu/sites/default/files/styles/large/public/original_photos/_dsc2921-x3_0.jpg?itok=wPp4YnTn") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("https://ucarecdn.com/190e2ed7-f3d4-47a8-9611-37e805e8a40a/") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
