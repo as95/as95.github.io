@@ -1,22 +1,38 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import "./index.css";
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { Link } from "gatsby";
+
+import Image from "../components/image";
+import SEO from "../components/seo";
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+  <main className="container">
+    <div>
+      <h1>
+        Howdy, I’m Amit Sen{" "}
+        <span role="img" aria-label="howdy">
+          👋
+        </span>
+      </h1>
+      <p>
+        I’m a software engineer based in the Southwest{" "}
+        <span role="img" aria-label="southwest">
+          🏜️
+        </span>{" "}
+        . Currently, I work at Esri where I build software to help manage and
+        understand geographic data{" "}
+        <span role="img" aria-label="map">
+          🗺️
+        </span>{" "}
+        .
+      </p>
+      <p>
+        If you’re interested in learning more about my work or if you just want
+        to connect, feel free to get in touch.
+      </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+  </main>
+);
 
-export default IndexPage
+export default IndexPage;
